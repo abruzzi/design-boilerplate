@@ -62,3 +62,8 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
+
+/* line 4, ../sass/style.scss */
+body {
+  font-size: 62.5%;
+}
