@@ -7,16 +7,65 @@
 	<!--[if IE]>
 	    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
+	<link href="stylesheets/font-woff.css" type="text/css" rel="stylesheet" >
+	<link href="stylesheets/fonticon.css" type="text/css" rel="stylesheet" >
+	
+	<link rel="stylesheet" type="text/css" href="bower_components/fullpage.js/jquery.fullPage.css" />
     <link href="stylesheets/style.css" type="text/css" rel="stylesheet" >
+
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/fullpage.js/jquery.fullPage.js"></script>
+
+    <script type="text/javascript" src="scripts/app.js"></script>
 </head>
 <body>
-	
-	<h1>hello, world</h1>
-	<h1>你好，世界</h1>
 
-	<section>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, mollitia. Praesentium earum sequi sit eius impedit, id consequatur voluptate labore numquam? Placeat vero inventore cupiditate natus, temporibus, voluptates qui necessitatibus?</p>
-	</section>
+<div id="container">
+    <div class="section hero">
+    	<a class="gobutton" href="#showcase">showcase</a>
+    	<div class="content">
+	    	<h1>Telstra Hackday <span>1</span></h1>
+			<p>Keep calm and love innovate</p>	
+    	</div>
+		<div class="nav"><i class="icon-angle-down"></i></div>
+	</div>
+
+    <div class="section arale">
+    	<div class="content">
+    		<h2>Turn Your Ideas Into a Product</h2>
+    		<p></p>
+    	</div>
+    </div>
+
+	<div class="showcase" id="showcase">
+		<h3>showcase of the first hackday</h3>
+
+		<div class="section idea">
+			<div class="content">
+	    		<img src="images/turbo-resized.png" alt="">
+	    		<p><a href="https://github.com/abruzzi/turbo">Turbo</a> is a easy to use tool for make the HTTP based API testing much more easier. It can be used for testing any HTTP based service, like RESTFul API, or old school SOAP web service</p>
+	    	</div>
+		</div>	
+
+		<div class="section idea">
+			<div class="content">
+	    		<img src="images/tech-radar-resized.png" alt="">
+	    		<p><a href="https://github.com/abruzzi/tech-radar">Radar</a> is a visualized version of skillset about ThoughtWorkers in Xian who have been working on Telstra. It contiains many categories, and put all of them in a much more understandable way</p>
+	    	</div>
+		</div>	
+
+	</div>
+	
+    <!-- <div class="section ddc">
+    	<div class="content">
+	    	<h2>you are awesome</h2>
+	    </div>
+	</div>
+	 -->
+	<footer>
+		<p>ThoughtWorks Xi'an @ 2015 July</p>
+	</footer>
+</div>
 
 </body>
 </html>

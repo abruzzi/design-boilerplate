@@ -1,4 +1,5 @@
-/* line 5, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+@charset "UTF-8";
+/* line 5, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +21,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -66,4 +67,194 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 4, ../sass/style.scss */
 body {
   font-size: 62.5%;
+  font-family: "Gravur","GravurCondensed-Regular","Helvetica Neue","Arial Narrow",Helvetica,Arial,sans-serif;
+}
+
+/* line 16, ../sass/style.scss */
+#container {
+  text-align: center;
+}
+
+/* line 20, ../sass/style.scss */
+.section {
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  display: flex;
+}
+
+/* line 27, ../sass/style.scss */
+.hero {
+  background: url("/images/telstra-blue.png");
+  background-size: cover;
+  color: #FFFFFF;
+  position: relative;
+}
+/* line 33, ../sass/style.scss */
+.hero .gobutton {
+  text-decoration: none;
+  color: #ffffff;
+  position: absolute;
+  top: 4em;
+  right: 4em;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  padding: .8em 1em;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  transition: all .2s ease-in-out;
+}
+/* line 46, ../sass/style.scss */
+.hero .gobutton:hover {
+  color: #3859B7;
+  background-color: #ffffff;
+}
+/* line 51, ../sass/style.scss */
+.hero .content {
+  margin: 0 auto;
+}
+/* line 54, ../sass/style.scss */
+.hero .nav {
+  position: absolute;
+  bottom: 2em;
+  left: 50%;
+  font-size: 3em;
+  width: 40px;
+  height: 40px;
+  margin-left: -20px;
+  border-radius: 50%;
+  line-height: 40px;
+  box-shadow: 0 0 5px #666666;
+  color: #2186DB;
+  background-color: #FFFFFF;
+  opacity: .7;
+  transition: all .2s ease-in;
+}
+/* line 71, ../sass/style.scss */
+.hero .nav:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+/* line 77, ../sass/style.scss */
+.hero h1 {
+  text-transform: uppercase;
+  font-size: 10em;
+}
+/* line 81, ../sass/style.scss */
+.hero h1 span {
+  color: #FD8724;
+}
+/* line 86, ../sass/style.scss */
+.hero p {
+  text-transform: uppercase;
+  font-size: 3em;
+  padding-top: 1em;
+}
+
+/* line 93, ../sass/style.scss */
+.arale {
+  background-color: #333333;
+  color: #F4F4F4;
+  position: relative;
+  z-index: 1;
+}
+/* line 100, ../sass/style.scss */
+.arale:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  background: url("/images/radar-resized.png");
+  background-size: cover;
+  z-index: -1;
+  opacity: .2;
+}
+/* line 114, ../sass/style.scss */
+.arale .content {
+  margin: 0 auto;
+}
+/* line 118, ../sass/style.scss */
+.arale h2 {
+  text-transform: uppercase;
+  font-size: 8em;
+}
+/* line 122, ../sass/style.scss */
+.arale h2 span {
+  color: #FD8724;
+}
+
+/* line 130, ../sass/style.scss */
+.showcase {
+  font-family: "Open Sans", "Microsoft YaHei", "Hiragino Sans GB", "Hiragino Sans GB W3", "微软雅黑", "Helvetica Neue", Arial, sans-serif;
+  padding: 10em 0;
+  background-color: #F5F5F5;
+  color: #3859B7;
+}
+/* line 137, ../sass/style.scss */
+.showcase h3 {
+  text-transform: capitalize;
+  font-size: 6em;
+  padding: 1em 0;
+}
+
+/* line 144, ../sass/style.scss */
+.idea {
+  width: 80%;
+  margin: 0 auto;
+}
+/* line 148, ../sass/style.scss */
+.idea .content {
+  margin: 0 auto;
+}
+/* line 152, ../sass/style.scss */
+.idea img {
+  width: 80%;
+}
+/* line 156, ../sass/style.scss */
+.idea p {
+  font-weight: lighter;
+  padding: 1em 0;
+  font-size: 2em;
+  line-height: 1.4;
+  color: #666666;
+}
+/* line 163, ../sass/style.scss */
+.idea p a {
+  text-decoration: none;
+  color: #3859B7;
+}
+
+/* line 170, ../sass/style.scss */
+footer {
+  font-family: "Open Sans", "Microsoft YaHei", "Hiragino Sans GB", "Hiragino Sans GB W3", "微软雅黑", "Helvetica Neue", Arial, sans-serif;
+  background-color: #3859B7;
+  color: #ffffff;
+}
+/* line 175, ../sass/style.scss */
+footer p {
+  font-size: 2em;
+  padding: 2em 0;
+}
+
+/* line 181, ../sass/style.scss */
+.ddc {
+  background: url("/images/telstra-orange.png");
+  background-size: cover;
+  color: #FFFFFF;
+}
+/* line 186, ../sass/style.scss */
+.ddc .content {
+  margin: 0 auto;
+}
+/* line 190, ../sass/style.scss */
+.ddc h2 {
+  text-transform: uppercase;
+  font-size: 8em;
+}
+/* line 194, ../sass/style.scss */
+.ddc h2 span {
+  color: #FD8724;
 }

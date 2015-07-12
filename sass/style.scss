@@ -3,4 +3,197 @@
 
 body {
 	font-size: 62.5%;
+	font-family: "Gravur","GravurCondensed-Regular","Helvetica Neue","Arial Narrow",Helvetica,Arial,sans-serif;
+}
+
+$number-color: #FD8724;
+$body-background-color: #F4F4F4;
+$body-text-color: #333333;
+$footer-background-color: #555555;
+$footer-text-color: #FFFFFF;
+$branding-color: #3859B7;
+
+#container {
+	text-align: center;
+}
+
+.section {
+	width: 100%;
+	min-height: 100vh;
+	align-items: center;
+	display: flex;
+}
+
+.hero {
+	background: url('/images/telstra-blue.png');
+	background-size: cover;
+	color: #FFFFFF;
+	position: relative;
+
+	.gobutton {
+		text-decoration: none;
+		color: #ffffff;
+		position: absolute;
+		top: 4em;
+		right: 4em;
+		text-transform: uppercase;
+		font-size: 1.5em;
+		padding: .8em 1em;
+		border: 1px solid #ffffff;
+		border-radius: 2px;
+		transition: all .2s ease-in-out;
+
+		&:hover {
+			color: $branding-color;
+			background-color: #ffffff;
+		}
+	}
+	.content {
+		margin: 0 auto;
+	}
+	.nav {
+		position: absolute;
+		bottom: 2em;
+		left: 50%;
+		font-size: 3em;
+		width: 40px;
+		height: 40px;
+
+		margin-left: -20px;
+		border-radius: 50%;
+		line-height: 40px;
+		box-shadow: 0 0 5px #666666;
+		color: #2186DB;
+		background-color: #FFFFFF;
+		opacity: .7;
+		transition: all .2s ease-in;
+
+		&:hover {
+			opacity: 1;
+			transform: scale(1.1);
+		}
+	}
+
+	h1 {
+		text-transform: uppercase;
+		font-size: 10em;
+
+		span {
+			color: $number-color;
+		}
+	}
+
+	p {
+		text-transform: uppercase;
+		font-size: 3em;
+		padding-top:1em;
+	}
+}
+
+.arale {
+	background-color: $body-text-color;
+	color: $body-background-color;
+	position: relative;
+	z-index: 1;
+	
+
+	&:after {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		content: "";		
+		background: url('/images/radar-resized.png');
+		background-size: cover;
+		z-index: -1;
+		opacity: .2;
+	}
+
+	.content {
+		margin: 0 auto;
+	}
+
+	h2 {
+		text-transform: uppercase;
+		font-size: 8em;
+
+		span {
+			color: $number-color;
+		}
+	}
+	
+}
+
+
+.showcase {
+	font-family: "Open Sans", "Microsoft YaHei", "Hiragino Sans GB", "Hiragino Sans GB W3", "微软雅黑", "Helvetica Neue", Arial, sans-serif;
+	padding: 10em 0;
+
+	background-color: #F5F5F5;
+	color: $branding-color;
+
+	h3 {
+		text-transform: capitalize;
+		font-size: 6em;
+		padding: 1em 0;
+	}
+}
+
+.idea {
+	width: 80%;
+	margin: 0 auto;
+
+	.content {
+		margin: 0 auto;
+	}
+
+	img {
+		width: 80%;
+	}
+
+	p {
+		font-weight: lighter;
+		padding: 1em 0;
+		font-size: 2em;
+		line-height: 1.4;
+		color: #666666;
+
+		a {
+			text-decoration: none;
+			color: $branding-color;
+		}
+	}
+}
+
+footer {
+	font-family: "Open Sans", "Microsoft YaHei", "Hiragino Sans GB", "Hiragino Sans GB W3", "微软雅黑", "Helvetica Neue", Arial, sans-serif;
+	background-color: $branding-color;
+	color: #ffffff;
+
+	p {
+		font-size: 2em;
+		padding: 2em 0;
+	}
+}
+
+.ddc {
+	background: url('/images/telstra-orange.png');
+	background-size: cover;
+	color: #FFFFFF;
+
+	.content {
+		margin: 0 auto;
+	}
+
+	h2 {
+		text-transform: uppercase;
+		font-size: 8em;
+
+		span {
+			color: $number-color;
+		}
+	}
+	
 }
