@@ -1,3 +1,3 @@
-// $(document).ready(function() {
-//     $('#container').fullpage();
-// });
+$(document).ready(function() {
+	new WOW().init();
+});
